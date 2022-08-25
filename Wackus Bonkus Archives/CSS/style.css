@@ -1,0 +1,45 @@
+h2{
+    color:rgb(15, 0, 113);
+    background-color:white;
+    font-size:20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-style: dashed;
+    margin: 0%;
+
+}
+
+p{
+    color:rgb(46, 2, 67);
+    background-color:rgba(101, 101, 106, 0.353);
+    font-size:12px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li{
+    font-size:12px;
+    font-weight:500;
+    font-stretch: ultra-condensed;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+
+
+
+section p{
+    text-align:center;
+    background-color:white;
+    color:black;
+    border-style:groove;
+    border-radius:10px;
+    padding:10px;
+    border-color:black;
+    font-size:15px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+
+
+#secA p{
+    color:green;
+}

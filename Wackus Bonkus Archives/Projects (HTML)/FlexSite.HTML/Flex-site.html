@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Site Thingy</title>
+
+        <style>
+            body{
+                margin:0px;
+            }
+            header{
+                background-color:yellowgreen;
+                width:auto;
+                height:20vh;
+            }
+
+            @media (max-width:800px) {
+                .flex{
+                    flex-direction:column;
+                }
+            }
+
+            .flex {
+                 display:flex;
+                 height:60vh;
+            }
+            article{
+                background-color:white;
+                flex-grow:8;
+            }
+            aside{
+                background-color:lightgoldenrodyellow;
+                flex-grow:2;
+                
+            }
+            nav{
+                background-color:lightblue;
+                flex-grow:2;
+            }
+
+            footer{
+                background-color:yellowgreen;
+                width:auto;
+                height:20vh;
+            }
+        </style>
+
+</head>
+<body>
+    <header>Head</header>
+
+    <div class="flex">
+        <article>Article</article>
+        <aside>Aside</aside>
+        <nav>Nav</nav>
+    </div>
+
+    <footer>Foot</footer>
+
+</body>
+</html>
