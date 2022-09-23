@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Borngus</title>
+    <script src="https://kit.fontawesome.com/6e25eeff3f.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        @font-face {
+            font-family: Nanum;
+            src: url(NanumBrushScript-Regular.ttf);
+        }
+        @font-face {
+            font-family: Homemade Apple;
+            src: url(HomemadeApple-Regular.ttf);
+        }
+
+
+
+        body{
+            margin:0;
+            background-image:linear-gradient(red,orange,blueviolet)
+        }
+        fieldset{
+            border-radius:3%;
+            border-color:black;
+        }
+        legend{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size:20px;
+        }
+
+
+        input{
+            background-color:beige;
+            border-color:brown;
+            border-radius:20%; }
+        textarea{
+            resize: none;
+            background-color:beige;
+            border-color:brown;
+            border-radius:5%; }
+        select{
+            background-color:beige;
+            border-color:brown;
+        }
+        button{
+            background-color:beige;
+            border-color:brown;
+        }
+        output{
+            font-family: 'Nanum';
+            font-weight:bolder;
+        }
+
+
+        
+        h2{
+        text-align:center;
+        font-size:30px;
+        }
+        p{
+        display:flex;
+        font-size:2px;
+        margin-right:250px; 
+        color:rgb(155, 10, 199);
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+
+
+        #BuildForm{
+            border-width:5px;
+            border-radius:0;
+            border-radius:1%;
+        }
+        #name{
+            font-family:'Homemade Apple';
+            font-weight:bolder;
+            letter-spacing:2px;
+            word-spacing: 5%;
+        }
+        #NP{
+            display:flex;
+            justify-content: space-around;
+        }
+        #add{
+            border-radius:0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2 id="Title">Build Your Very Own Borngus™</h2>
+
+    <form id="Build">
+    <fieldset id="BuildForm">
+        <fieldset id="SiSh">
+            <legend id="clrSh">Type and Shape</legend>
+            <label for="Spec">Choose a species for your Borngus:</label>
+                <select id="Spec" required>
+                    <option>Brugg</option>
+                    <option>Frumbus</option>
+                    <option>Hingly</option>
+                    <option>Krongle Songle</option>
+                    <option>Skrangle</option>
+                    <option>Jab-rabbiss</option>
+                    <option>Somnim</option>
+                    <option>Doungry</option>
+                    <option>Abll Babll</option>
+                    <option>Grommiss Nommiss</option>
+                    <option>Scrungglow</option>
+                    <option>Dave</option>
+                    <option>Yes</option>
+                </select> <br/>
+
+            <label for="Size" id="Size">Choose a size for the Borngus</label>
+            <input type="button" id="Size" value="dinky ($15.00)">
+            <input type="button" id="Size" value="mini ($20.00)">
+            <input type="button" id="Size" value="smol ($25.00)">
+            <input type="button" id="Size" value="regular ($30.00)">
+            <input type="button" id="Size" value="big ($35.00)">
+            <input type="button" id="Size" value="large ($40.00)">
+            <input type="button" id="Size" value="giant ($45.00)"> <br/>
+
+            <label for="Shape">Choose the general body shape for your Borngus</label>
+                <select id="Shape">
+                    <option>thin (-$3.00)</option>
+                    <option>thicc (+$3.00)</option>
+                    <option>chonk (+$8.00)</option>
+                    <option>bulbous (+$6.00)</option>
+                    <option>l o n k (+$4.00)</option>
+                    <option>squimsh (-$4.00)</option>
+                    <option>rotund (+$0.00)</option>
+                    <option>Yes</option>
+                    <option>??????</option>
+                </select>
+        </fieldset>
+
+        <fieldset id="Col">
+            <legend id="Clr">Color Scheme</legend>
+            <label >Choose a color scheme for the Borngus</label> <br/>   
+                <label for="Clr1">Primary Color</label>
+                <input type="color" id="Clr1"> <br/> 
+                <label for="Clr2">Secondary Color</label>
+                <input type="color" id="Clr2"> <br/> 
+                <label for="Clr3">Tertiary Color</label>
+                <input type="color" id="Clr3"> <br/> 
+                <label for="hue1">Highlight</label>
+                <input type="color" id="hue1"> <br/> 
+        </fieldset>
+
+        <fieldset id="2ndChar">
+            <legend id="chara">Secondary Characteristics</legend>
+                <label for="eye">Number of Eyes:</label>
+                <input type="number" id="eye" min="-14" max="91248">
+
+                <label for="mouth">Number of Mouths:</label>
+                <input type="number" id="mouth" min="-53" max="270">
+
+                <label for="limb">Number of Limbs:</label>
+                <input type="number" id="limb" min="-30" max="19360">
+
+                <label for="pocket">Pocket Count:</label>
+                <input type="number" id="pocket" min="-12" max="2500"> 
+
+                <label for="eat">Edibility:</label>
+                <input type="range" value="9" min="0" max="18" step="1" oninput="this.nextElementSibling.value = this.value">
+                <output>9</output> <br/>
+
+
+                <label for="Thing">Types of Accessories: </label>
+                <select id="Thing">
+                    <option>None</option>
+                    <option>Sewing Needle(includes thread)</option>
+                    <option>Mask</option>
+                    <option>Ping-Pong Ball</option>
+                    <option>Foot(may or may not be human)</option>
+                    <option>Teleporter(for committing tax evasion)</option>
+                    <option>Baby Spamton(also for comitting tax evasion)</option>
+                    <option>Pipis(it knows what you did)</option>
+                    <option>Random(May or may not be on this list)</option>
+                    <option>Yes</option>
+                </select> (+$5.00 for each) <br/>
+
+                <label for="taste">Taste:</label>
+                <input type="text" id="taste" placeholder="what you want your Borngus to taste like" size="50">
+                <label for="scent">Smell:</label>
+                <input type="text" id="scent" placeholder="what you want your Borngus to smell like" size="50">
+                <label for="feel">Texture:</label>
+                <select id="feel" value="how you want your Borngus to feel">
+                    <option></option>
+                    <option>smooth</option>
+                    <option>rough</option>
+                    <option>fluffy</option>
+                    <option>spiky</option>
+                    <option>static</option>
+                    <option>crunchy</option>
+                    <option>toast</option>
+                    <option>Yes</option>
+                    <option>Vi\|f55#^&~!uf5]`$645_*-/?3</option>
+                </select> <br/> <br/>
+
+            <div id="NP">
+                <div style="flex-grow: 1">
+                    <label for="name">Give the Borngus a name:</label> <br/>
+                    <input type="text" id="name" size="75" maxlength="250" placeholder="Plurisnomiss von Toastiss">
+                </div>
+                <div style="flex-grow: 5">
+                    <label for="pers" id="Person">Describe the Borngus's personality:</label> <br/>
+                    <textarea id="pers" name="pers" rows="5" cols="100"></textarea>
+                </div>
+            </div>
+
+            </fieldset>
+
+
+                <fieldset id="Info">
+                <legend id="payInfo">Payment Information</legend>
+                    <label for="name2" id="N">Name(First and Last)</label>
+                    <input type="text" id="name2" size="25" placeholder="Wackus Bonkus" required>
+
+                    <label for="add" id="Addr">Address:</label>
+                    <input type="text" id="add" placeholder="Address" required>
+                    <label for="add">City:</label>
+                    <input type="text" id="add" placeholder="City" required>
+                    <label for="add">State:</label>
+                    <input type="text" id="add" placeholder="State" required>
+                    <label for="add">Zip Code:</label>
+                    <input type="text" id="add" placeholder="Zip Code" required>
+
+
+                    <br/>
+                    <label for="card">Credit Card Number</label>
+                    <input type="password" id="card" placeholder="•••• •••• •••• ••••" required>
+
+                    <label for="secure">Security Code</label>
+                    <input type="text" id="secure" placeholder="CVC" required>
+
+                    <label for="Method">Payment method</label>
+                    <select id="Method" required>
+                    <option>Visa</option>
+                    <option>Mastercard</option>
+                    <option>Discover</option>
+                    <option>Souls of the innocent</option>
+                    <option>American Express</option>
+                    </select>
+
+                    <label for="Email">Enter your Email:</label>
+                    <input type="text" id="Email" placeholder="Name@gmail.com"> <br/> <br/>
+
+                    <label for="ques">At what angle is your house oriented in relation to the Capital of Detroit?</label>
+                    <input type="text" id="ques" required> <br/> <br/>
+
+                    <label for="agree" id="Ag">I understand that I am now liable for the maintenance and nurturing of my Borngus™ and am liable for any tomfoolery which it may partake in at any moment whenever it so pleases.</label>
+                    <input type="checkbox" id="agree">
+                    
+                    <h3>DISCLAIMER:</h3><p> We are not responsible for any and all forms of mischievous "games" performed by your Borngus™, including sudden reality destabilization/restructuring events brought on my said Borngus™, tax evasion, vehicular manslaughter, plotting to overthrow the Danish Government, stabbing of random people(including yourself), sudden loss of limbs and/or organs upon acquiring your Borngus™, ancient Eldritch gods being summoned within your living room, having your mind enslaved by the Sun itself, being forced to sacrifice your first born child to your Borngus™, or any other forms of destructive and/or maniacal skallywaggery. This gremlin is your child now and you will be held responsible for its crimes against humanity if and/or when they are committed.</p>
+            </fieldset>
+
+        </fieldset> <br/>
+        <input type="submit" id="sub" value="Submit form">
+        <input type="reset" id="clr" value="Clear">
+    </form>
+</body>
+</html>
